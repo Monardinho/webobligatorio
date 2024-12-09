@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Habilidades</title>
+    <link rel="stylesheet" href="style/stylehabilidades.css">
+</head>
+<body>
+    <div class="retro-window" id="main-window">
+        <div class="retro-browser-bar">
+            <div class="retro-dots">
+                <span class="retro-dot red"></span>
+                <span class="retro-dot yellow"></span>
+                <span class="retro-dot green"></span>
+            </div>
+            <span class="retro-title">Mis Habilidades</span>
+        </div>
+        <div class="retro-content">
+            <h1>Conocimientos y Habilidades</h1>
+            <ul>
+                <li><strong>Photoshop & Illustrator:</strong> Diseño gráfico, branding y creación de contenido visual.</li>
+                <li><strong>HTML:</strong> Desarrollo de páginas web y estructura básica de código.</li>
+                <li><strong>TouchDesigner:</strong> Creación de visuales interactivas y proyectos generativos.</li>
+                <li><strong>Marketing Digital:</strong> Estrategias y campañas utilizando herramientas como Meta Ads y Google Ads.</li>
+                <li><strong>Fotografía:</strong> Experiencia en fotografía analógica y digital.</li>
+            </ul>
+            <h2>Ejemplos de mis proyectos</h2>
+            <div class="project-gallery">
+                <button class="project-button" onclick="showProject('photoshop')">Photoshop e Illustrator</button>
+                <button class="project-button" onclick="showProject('touchdesigner')">TouchDesigner</button>
+                <button class="project-button" onclick="showProject('photography')">Fotografía</button>
+            </div>
+            <a href="index1.html" class="retro-button">Volver al Menú Principal</a>
+        </div>
+    </div>
+
+    <!-- Ventana de Proyecto: Photoshop -->
+    <div class="retro-window" id="photoshop-window" style="display: none;">
+        <div class="retro-browser-bar">
+            <div class="retro-dots">
+                <span class="retro-dot red"></span>
+                <span class="retro-dot yellow"></span>
+                <span class="retro-dot green"></span>
+            </div>
+            <span class="retro-title">Photoshop Project</span>
+        </div>
+        <div class="retro-content">
+            <h1>Photoshop e Illustrator</h1>
+            <p>Un poco de lo que he hecho con estos programas:</p>
+            <p>Branding, mockups y flyers.</p>
+            <img src="images/cervezaboladenive.jpg" alt="Ejemplo de Photoshop e Illustrator">
+            <button class="retro-button" onclick="showMain()">Volver</button>
+        </div>
+    </div>
+
+    <!-- Ventana de Proyecto: TouchDesigner -->
+    <div class="retro-window" id="touchdesigner-window" style="display: none;">
+        <div class="retro-browser-bar">
+            <div class="retro-dots">
+                <span class="retro-dot red"></span>
+                <span class="retro-dot yellow"></span>
+                <span class="retro-dot green"></span>
+            </div>
+            <span class="retro-title">TouchDesigner Project</span>
+        </div>
+        <div class="retro-content">
+            <h1>Visuales Interactivas</h1>
+            <p>Proyecto interactivo utilizando TouchDesigner.</p>
+            <video class="retro-video" src="images/videos/videotouchdesigner.mp4" autoplay loop muted playsinline>
+                Tu navegador no soporta este video.
+            </video>
+            <button class="retro-button" onclick="showMain()">Volver</button>
+        </div>
+    </div>
+
+    <!-- Ventana de Proyecto: Fotografía -->
+    <div class="retro-window" id="photography-window" style="display: none;">
+        <div class="retro-browser-bar">
+            <div class="retro-dots">
+                <span class="retro-dot red"></span>
+                <span class="retro-dot yellow"></span>
+                <span class="retro-dot green"></span>
+            </div>
+            <span class="retro-title">Fotografía</span>
+        </div>
+        <div class="retro-content">
+            <h1>Proyecto de Fotografía</h1>
+            <p>Imágenes tomadas en formato analógico y digital.</p>
+            <img src="images/photography_example.jpg" alt="Ejemplo de Fotografía">
+            <button class="retro-button" onclick="showMain()">Volver</button>
+        </div>
+    </div>
+
+    <script>
+        function showProject(projectId) {
+            document.getElementById('main-window').style.display = 'none';
+            document.getElementById(`${projectId}-window`).style.display = 'block';
+        }
+
+        function showMain() {
+            document.querySelectorAll('.retro-window').forEach(window => window.style.display = 'none');
+            document.getElementById('main-window').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

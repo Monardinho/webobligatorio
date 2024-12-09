@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Retro</title>
+    <link rel="stylesheet" href="style/styledeprueba.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Ventana de imágenes estilo retro -->
+        <div class="browser-frame">
+            <div class="browser-bar">
+                <div class="dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="browser-title">IMG000.JPG</span>
+            </div>
+            <div class="retro-image-content content">
+                <h1>Vista General</h1>
+                <img id="main-image" src="images/surf1.jpg" alt="Imagen principal">
+                <div class="retro-image-controls">
+                    <button onclick="changeImage(-1)">&#8249;</button>
+                    <button onclick="changeImage(1)">&#8250;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ventana de navegación estilo retro -->
+        <div class="browser-frame">
+            <div class="browser-bar">
+                <div class="dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="browser-title">Untitled - TextEdit</span>
+            </div>
+            <div class="retro-nav-content content">
+                <ul>
+                    <li><a href="#">03 Quién soy</a></li>
+                    <li><a href="#">04 Habilidades</a></li>
+                    <li><a href="index2.html">05 Mis proyectos</a></li>
+                    <li><a href="indexgaleria.html">10 Fotografía analógica</a></li>
+                    <li><a href="#">11 Trabajos</a></li>
+                    <li><a href="#">13 Información de contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script/script1.js"></script>
+</body>
+</html>

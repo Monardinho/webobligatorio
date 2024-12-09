@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Contacto</title>
+    <link rel="stylesheet" href="style/stylecontacto.css">
+</head>
+<body>
+    <div class="retro-window">
+        <!-- Barra superior -->
+        <div class="retro-browser-bar">
+            <div class="retro-dots">
+                <span class="retro-dot red"></span>
+                <span class="retro-dot yellow"></span>
+                <span class="retro-dot green"></span>
+            </div>
+            <span class="retro-title">Información de Contacto</span>
+        </div>
+        
+        <!-- Contenido -->
+        <div class="retro-content">
+            <h1>Contáctame</h1>
+            <p>Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:</p>
+            
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:miemail@ejemplo.com">miemail@ejemplo.com</a></li>
+                <li><strong>Teléfono:</strong> +598 123 456 789</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/miperfil" target="_blank">linkedin.com/in/miperfil</a></li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/miusuario" target="_blank">@miusuario</a></li>
+            </ul>
+            
+            <h2>Formulario de Contacto</h2>
+            <form action="enviar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br>
+                
+                <button type="submit" class="retro-button">Enviar</button>
+            </form>
+            
+            <a href="index1.html" class="retro-button">Volver al Menú Principal</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Mejorado</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1e1e2e;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; /* Color de texto legible sobre el fondo */
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="color"],
+        input[type="submit"],
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .submit-btn {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .alert-btn {
+            background-color: #ff4d4d;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .alert-btn:hover {
+            background-color: #ff3333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario Mejorado</h1>
+    <form action="#" method="post">
+        <!-- Campo de texto -->
+        <label for="fname">Color favorito:</label>
+        <input type="text" id="fname" name="fname" placeholder="Escribe tu color favorito" required>
+
+        <label for="lname">Cuadro de fútbol:</label>
+        <input type="text" id="lname" name="lname" placeholder="¿Bolso o manya?" required>
+
+        <!-- Checkboxes -->
+        <h2>¿Te gusta HTML?</h2>
+        <input type="checkbox" id="love-html" name="html-preference" value="Me encanta">
+        <label for="love-html">Me encanta HTML</label><br>
+        <input type="checkbox" id="neutral-html" name="html-preference" value="Me da igual">
+        <label for="neutral-html">No me va ni me viene</label><br>
+        <input type="checkbox" id="hate-html" name="html-preference" value="Lo odio">
+        <label for="hate-html">No me gusta HTML</label><br>
+
+        <!-- Botón de alerta -->
+        <h2>Botón de Alerta</h2>
+        <input type="button" class="alert-btn" onclick="alert('¡Se te acaba de descargar un virus!')" value="Sorpresa">
+
+        <!-- Campo de número -->
+        <h2>¿Cuántos años tienes?</h2>
+        <label for="quantity">Cantidad:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="1" value="30">
+
+        <!-- Campo de teléfono -->
+        <h2>Número de Teléfono</h2>
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678">
+
+        <!-- Campo de color -->
+        <h2>Color Favorito</h2>
+        <label for="favcolor">Selecciona un color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+
+        <!-- Radio Buttons -->
+        <h2>¿Vas a entregar la tarea de HTML?</h2>
+        <input type="radio" id="submit-html" name="homework" value="Claro">
+        <label for="submit-html">Claro, es mi deber</label><br>
+        <input type="radio" id="no-time" name="homework" value="No me dio el tiempo">
+        <label for="no-time">No me dio el tiempo</label><br>
+        <input type="radio" id="who-is-caro" name="homework" value="No sé quién es Caro">
+        <label for="who-is-caro">No sé quién es Caro</label><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" class="submit-btn" value="Enviar">
+    </form>
+</body>
+</html>

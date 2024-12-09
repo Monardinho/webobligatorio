@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Retro</title>
+    <link rel="stylesheet" href="style/styles1.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Ventana de imágenes estilo retro -->
+        <div class="retro-image-window">
+            <div class="retro-browser-bar">
+                <div class="retro-dots">
+                    <span class="retro-dot red"></span>
+                    <span class="retro-dot yellow"></span>
+                    <span class="retro-dot green"></span>
+                </div>
+                <span class="retro-title">IMG000.JPG</span>
+            </div>
+            <div class="retro-image-content">
+                <h1>Vista General</h1>
+                <img id="main-image" src="images/surf1.jpg" alt="Imagen principal">
+                <div class="retro-image-controls">
+                    <button onclick="changeImage(-1)">&#8249;</button>
+                    <button onclick="changeImage(1)">&#8250;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ventana de navegación estilo retro -->
+        <div class="retro-nav-window">
+            <div class="retro-browser-bar">
+                <div class="retro-dots">
+                    <span class="retro-dot red"></span>
+                    <span class="retro-dot yellow"></span>
+                    <span class="retro-dot green"></span>
+                </div>
+                <span class="retro-title">Untitled - TextEdit</span>
+            </div>
+            <div class="retro-nav-content">
+                <ul>
+                    <li><a href="indexsobremi.html">01 About me</a></li>
+                    <li><a href="indexhabilidades.html">02 Habilidades</a></li>
+                    <li><a href="index2.html">03 Mis proyectos</a></li>
+                    <li><a href="indexgaleria.html">04 Fotografía analógica</a></li>
+                    <li><a href="indextrabajos.html">05 Trabajos</a></li>
+                    <li><a href="indexcontacto.html">13 Información de contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/script1.js"></script>
+</body>
+</html>
